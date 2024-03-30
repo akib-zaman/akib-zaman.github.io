@@ -1,0 +1,26 @@
+.title-bar {
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.title-bar h1 {
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+}
+
+.title-bar p {
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title-bar h1 {
+    font-size: 2rem;
+  }
+
+  .title-bar p {
+    font-size: 1rem;
+  }
+}

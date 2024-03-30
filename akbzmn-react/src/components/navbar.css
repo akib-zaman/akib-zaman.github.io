@@ -1,27 +1,42 @@
-header {
-  background-color: #005f73; /* Example background color */
-  color: #ffffff; /* Text color */
-  padding: 20px 0;
+:root {
+  --primary-color: #007bff; /* Primary color for your brand */
+  --text-color: #ffffff;
+  --nav-background-color: #333;
 }
 
-.container {
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Or any color you prefer */
+  z-index: 1000; /* Ensures the navbar stays on top of other content */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: adds a shadow for depth */
+}
+
+/* Add padding to the top of the body to prevent content from being hidden behind the navbar */
+body {
+  padding-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li a {
-  color: #ffffff; /* Links color */
+.nav-item {
+  color: var(--text-color);
   text-decoration: none;
-  padding: 0 15px;
+  padding: 20px;
+  transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+.nav-item:hover {
+  background-color: var(--primary-color);
 }
+
