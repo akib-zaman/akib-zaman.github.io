@@ -1,0 +1,27 @@
+header {
+  background-color: #005f73; /* Example background color */
+  color: #ffffff; /* Text color */
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li a {
+  color: #ffffff; /* Links color */
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}

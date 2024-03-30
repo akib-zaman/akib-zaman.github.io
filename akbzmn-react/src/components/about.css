@@ -1,0 +1,60 @@
+/* about.css */
+
+.about-section {
+    text-align: center; /* Center-align text */
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Maximum width of the section */
+    margin: 40px auto; /* Center section horizontally with margin */
+}
+
+.profile-img {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height to maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.btn {
+    display: inline-block; /* Allows setting margins */
+    margin-bottom: 20px; /* Space below the button */
+    padding: 10px 15px; /* Padding inside the button */
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the font bold */
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.about-section p {
+    color: #333; /* Dark text for readability */
+    font-size: 1rem; /* Default font size */
+    line-height: 1.6; /* Spacing between lines */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.skills-container {
+    margin-top: 20px; /* Space above the skills list */
+}
+
+.skills {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center-align the skill items */
+}
+
+.skills li {
+    display: inline-block; /* Display skills in a row */
+    background-color: #e9ecef; /* Light grey background */
+    padding: 5px 15px; /* Padding inside each skill */
+    margin: 5px; /* Space between skills */
+    border-radius: 2px; /* Slightly rounded corners for skill items */
+    font-weight: bold; /* Bold font for emphasis */
+}
