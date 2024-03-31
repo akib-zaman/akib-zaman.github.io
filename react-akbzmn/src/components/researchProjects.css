@@ -1,0 +1,84 @@
+.section-title {
+  text-align: center;
+  font-size: 2rem; /* Adjust the size as needed */
+  margin: 20px 0 20px; /* Adds space above and below the title */
+  padding-bottom: 10px; /* Optional: for decoration */
+  color: #31748f; /* A deep teal color for contrast and visual appeal */
+  position: relative;
+  font-family: 'Lato', sans-serif; /* Example font, adjust as needed */
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60%; /* Adjust the width of the underline as needed */
+  height: 2px;
+  background-color: #aee6b0; /* A light green color for a subtle underline */
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Consider if you need this, as it might hide overflowing cards */
+  width: 100%;
+  min-height: 500px; /* Use min-height for flexibility */
+  position: relative;
+}
+
+.project-card {
+  min-height: 375px;
+  width: 450px; /* Adjust based on your content */
+  height: 350px; /* Adjust based on your content */
+  position: absolute;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Increased Y-offset and blur radius */
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+.project-card img {
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the area nicely */
+}
+
+
+.project-card .project-content {
+  overflow: auto; /* Consider 'auto' to allow scrolling if content overflows */
+  padding: 10px; /* Padding inside the content area */
+  height: auto; /* Allows content area to adjust based on content */
+}
+
+.project-card:not(.active) img {
+  height: 160px; /* Slightly smaller images for non-active cards */
+}
+
+.project-card:not(.active) .project-content h3,
+.project-card:not(.active) .project-content p {
+  font-size: 0.8em; /* Slightly smaller text for non-active cards */
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%; /* Allows more space on smaller screens */
+    min-height: auto; /* Allows the card to adjust its height automatically */
+    position: relative; /* Adjust if necessary for responsive layout */
+    margin-bottom: 20px; /* Provides spacing between cards */
+  }
+
+  .projects-container {
+    flex-direction: column; /* Stacks cards vertically on smaller screens */
+    min-height: auto; /* Adjusts container height automatically */
+    overflow: auto; /* Allows scrolling through cards if they overflow */
+  }
+}
