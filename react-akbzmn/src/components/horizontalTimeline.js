@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './horizontalTimeline.css';
 import thaPic from '../images/tha.png';
 import utaPic from '../images/uta.webp';
@@ -16,6 +16,32 @@ const events = [
 ];
 
 const HorizontalTimeline = () => {
+  const adjustTimelineAlignment = () => {
+    const timelineContainer = document.querySelector('.timeline-container');
+    if (timelineContainer) {
+      const viewportWidth = window.innerWidth;
+      const contentWidth = timelineContainer.scrollWidth;
+
+      if (contentWidth > viewportWidth) {
+        timelineContainer.classList.remove('center-content');
+      } else {
+        timelineContainer.classList.add('center-content');
+      }
+    }
+  };
+
+  // useEffect to handle resizing and initial load
+  useEffect(() => {
+    adjustTimelineAlignment(); // Call on initial render
+
+    window.addEventListener('resize', adjustTimelineAlignment); // Add resize listener
+
+    // Cleanup function to remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', adjustTimelineAlignment);
+    };
+  }, []);
+
   return (
     <div>
       <div className="color-key-container">

@@ -9,16 +9,17 @@ body, html {
   display: flex;
   overflow-x: auto;
   white-space: nowrap; /* Prevents wrapping of timeline items */
-  padding: 20px 10px 20px 10px; /* Adjusted padding with 10px on the left specifically */
+  padding: 20px 10px; /* Keep padding uniform */
   background-color: #f5f5f5;
   margin: 0;
-  width: 100vw; /* Viewport width */
+  width: 100vw; /* Ensures the container takes full viewport width */
   background: linear-gradient(to right, #e0eafc, #cfdef3);
-  margin-left: 0; /* Counteract the initial 10px padding for seamless flow */
-  justify-content: center; /* Centers items horizontally */
-  box-sizing: border-box;
+  box-sizing: border-box; /* Makes sure borders and paddings are included in the element's total width and height */
 }
 
+.center-content {
+  justify-content: center;
+}
 
 .timeline-item {
   flex: 0 0 auto; /* Do not grow, do not shrink, but can be basis auto */

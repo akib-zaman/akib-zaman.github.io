@@ -1,39 +1,27 @@
-import React, { useState } from 'react';
-import './contact.css';
+import React from 'react';
+import './contact.css'; // Ensure this is correctly linked
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
-const Contact = () => {
-  // Placeholder for form submission logic
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Implement form submission logic here
-    alert('Form submitted. Thank you!');
-  };
-
+const ContactInfo = () => {
   return (
-    <div className="contact-section">
-      <h2>Contact</h2>
-      <p>For inquiries, collaborations, or just to say hello, feel free to reach out.</p>
-
-      <div className="contact-info">
-        <p>Email: akbzmn@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/akib-zaman/" target="_blank" rel="noopener noreferrer" className="linkedin-link">Visit my LinkedIn profile</a></p>
-        <p>GitHub: <a href="https://github.com/akib-zaman/" target="_blank" rel="noopener noreferrer" className="github-link">Visit my GitHub profile</a></p>
+    <div className="contact-info-section">
+      <h2>Contact Me</h2>
+      <div className="contact-methods">
+        <div className="contact-method">
+          <FaEnvelope className="contact-icon" style={{ color: '#D14836' }}/> {/* Gmail Red */}
+          <p className="contact-detail">akbzmn@gmail.com</p>
+        </div>
+        <a href="https://www.linkedin.com/in/akib-zaman" target="_blank" rel="noopener noreferrer" className="contact-method">
+          <FaLinkedin className="contact-icon" style={{ color: '#0A66C2' }}/> {/* LinkedIn Blue */}
+          <p className="contact-detail">LinkedIn</p>
+        </a>
+        <a href="https://github.com/akib-zaman" target="_blank" rel="noopener noreferrer" className="contact-method">
+          <FaGithub className="contact-icon" style={{ color: '#333' }}/> {/* GitHub Black */}
+          <p className="contact-detail">GitHub</p>
+        </a>
       </div>
-
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit" className="btn">Send</button>
-      </form>
     </div>
   );
 };
 
-export default Contact;
+export default ContactInfo;

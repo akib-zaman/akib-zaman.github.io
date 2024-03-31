@@ -1,31 +1,29 @@
-import badminton from '../images/badminton-1.jpg';
-import billiards from '../images/billiards-1.png';
-import pc from '../images/pc-build.jpg';
-import trophies from '../images/trophies-1.jpg';
+import React from 'react';
+import './activities.css'; // Make sure to create and link this CSS file
 
-const activities = [
-  {
-    title: 'Badminton',
-    description: 'Playing badminton has always been a way for me to unwind and stay fit. It\'s not just about the physical exercise but also about strategizing and outsmarting the opponent, which I find parallels in problem-solving in HCI.',
-    imageUrl: badminton,
-  },
-  {
-    title: 'Billiards',
-    description: 'Billiards allows me to focus and improve my precision and strategic thinking. The concentration and attention to detail required in billiards are skills that I also apply in my academic research.',
-    imageUrl: billiards,
-  },
+// Assuming you have images or icons for each interest
+import badmintonImg from '../images/badminton-1.jpg';
+import billiardsImg from '../images/billiards-1.png';
+import pcBuildingImg from '../images/pc-build.jpg';
+
+const interests = [
+  { title: "Badminton", image: badmintonImg, description: "Texas Intercollegiate Badminton Tournament." },
+  { title: "Billiards", image: billiardsImg, description: "Texas Intercollegiate Billiards Tournament." },
+  { title: "PC Building", image: pcBuildingImg, description: "Assembling PCs from scratch combines my love for technology and creativity." },
+  // { title: "Volunteering", image: volunteeringImg, description: "Leading workshops and volunteering fuels my passion for community service." },
+  // { title: "Traveling", image: travelingImg, description: "Exploring new cultures and landscapes through travel broadens my perspective." },
 ];
 
-const ExtracurricularActivities = () => {
+const Activities = () => {
   return (
-    <div className="activities-section">
+    <div className="lifestyle-interests-section">
       <h2>Extracurricular Activities</h2>
-      <div className="activities-container">
-        {activities.map((activity, index) => (
-          <div key={index} className="activity-card">
-            <img src={activity.imageUrl} alt={activity.title} className="activity-image" />
-            <h3>{activity.title}</h3>
-            <p>{activity.description}</p>
+      <div className="interests-grid">
+        {interests.map((interest, index) => (
+          <div className="interest-card" key={index}>
+            <img src={interest.image} alt={interest.title} className="interest-image" />
+            <h3>{interest.title}</h3>
+            <p>{interest.description}</p>
           </div>
         ))}
       </div>
@@ -33,4 +31,4 @@ const ExtracurricularActivities = () => {
   );
 };
 
-export default ExtracurricularActivities;
+export default Activities;

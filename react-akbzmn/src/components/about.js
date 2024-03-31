@@ -17,9 +17,9 @@ const About = () => {
       <h2></h2>
       <a href="akib-cv.pdf" className="btn download-cv-btn" download>Download CV</a>
       <div className="about-description">
-        <p>I am a PhD (ABD) <b>[Graduating: May 2024]</b> specializing in Human-Computer Interaction at the University of ABC.</p>
+        <p>I am a PhD (ABD) <b>[Graduating: May 2024]</b> specializing in Human-Computer Interaction at the University of Texas at Arlington.</p>
         <p>My research focuses on data-centric methods to understand AI Explainability.</p>
-        <p>I am supervised by <a href="http://cearto.com/" target="_blank" rel="noopener noreferrer">Dr. AZ</a>.</p>
+        <p>I am supervised by <a href="http://cearto.com/" target="_blank" rel="noopener noreferrer">Dr. César Torres</a>.</p>
       </div>
       <div className="skills-container">
         <h3></h3>
