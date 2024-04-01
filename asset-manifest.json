@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b322d798.css",
-    "main.js": "/static/js/main.a055cabf.js",
+    "main.js": "/static/js/main.416208c2.js",
     "static/js/453.08484ba2.chunk.js": "/static/js/453.08484ba2.chunk.js",
     "static/media/badminton-1.jpg": "/static/media/badminton-1.b9dadd9a7611f231fc44.jpg",
     "static/media/hrp.png": "/static/media/hrp.68c007bd968e9a01ea7f.png",
@@ -14,14 +14,15 @@
     "static/media/profile-pic.jpeg": "/static/media/profile-pic.178aa6a222d21da29983.jpeg",
     "static/media/dell.png": "/static/media/dell.1d9dcd9be7c559e0e092.png",
     "static/media/tha.png": "/static/media/tha.7c901569d5786e7cb8d0.png",
+    "static/media/cv.pdf": "/static/media/cv.ef487ad5055d88feafa2.pdf",
     "static/media/uta.webp": "/static/media/uta.5602b1c04f2d49155b1e.webp",
     "index.html": "/index.html",
     "main.b322d798.css.map": "/static/css/main.b322d798.css.map",
-    "main.a055cabf.js.map": "/static/js/main.a055cabf.js.map",
+    "main.416208c2.js.map": "/static/js/main.416208c2.js.map",
     "453.08484ba2.chunk.js.map": "/static/js/453.08484ba2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b322d798.css",
-    "static/js/main.a055cabf.js"
+    "static/js/main.416208c2.js"
   ]
 }
