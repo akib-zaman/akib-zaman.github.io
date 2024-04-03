@@ -28,11 +28,11 @@ function App() {
       <div id="publications">
         <Publications />
       </div>
-      <div id="activities">
-        <Activities />
-      </div>
       <div id="contact">
         <Contact />
+      </div>
+      <div id="activities">
+        <Activities />
       </div>
       {/* other components */}
     </div>

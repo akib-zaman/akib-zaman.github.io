@@ -15,15 +15,17 @@ const About = () => {
   return (
     <div className="about-section">
       <img src={profilePic} alt="Akib Zaman" className="profile-img" />
-      <h2></h2>
+      {/* Highlight Banner */}
+      <div className="highlight-banner">
+        <p>Exciting News: I'm graduating in May 2024 and am actively seeking new opportunities in Human-Computer Interaction and related fields. Let's <a href="#contact" className="banner-link">connect!</a></p>
+      </div>
       <a href={cvPDF} className="btn download-cv-btn" target="_blank" rel="noopener noreferrer">View CV</a>
       <div className="about-description">
-        <p>I am a PhD (ABD) <b>[Graduating: May 2024]</b> specializing in Human-Computer Interaction at the University of Texas at Arlington.</p>
-        <p>My research focuses on data-centric methods to understand AI Explainability.</p>
-        <p>I am supervised by <a href="http://cearto.com/" target="_blank" rel="noopener noreferrer">Dr. César Torres</a>.</p>
+        <p>I am a PhD (ABD) specializing in Human-Computer Interaction at the University of Texas at Arlington.</p>
+        <p>I'm particularly interested in roles that challenge me to apply my research in AI Explainability, enhancing the way humans interact with complex systems.</p>
+        <p>I am supervised by <a href="http://cearto.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontWeight: 'bold' }}>Dr. César Torres</a>.</p>
       </div>
       <div className="skills-container">
-        <h3></h3>
         <ul className="skills">
           {skills.map((skill, index) => (
             <li key={index}>{skill.name}</li>

@@ -9,6 +9,34 @@
   color: #f0f0f0; /* Light text for readability */
 }
 
+.highlight-banner {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f0f8ff; /* Example: Light blue background for a soft, attention-grabbing look */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333; /* Darker text for contrast */
+  font-family: 'Arial', sans-serif; /* Example: Choose a font that fits your site's theme */
+}
+
+.highlight-banner p {
+  margin: 0; /* Adjust spacing around the paragraph if needed */
+  font-size: 1.1rem; /* Slightly larger font size for emphasis */
+  line-height: 1.5; /* Improve readability */
+}
+
+.banner-link {
+  color: #007bff; /* Or any color that stands out, matching your site's theme */
+  text-decoration: underline; /* Makes it clear it's clickable */
+  font-weight: bold; /* Make the link bold for additional emphasis */
+}
+
+/* Consider adding hover effects to the link for interactivity */
+.banner-link:hover {
+  color: #0056b3; /* A darker shade of blue when hovered */
+  text-decoration: none; /* Optional: change or remove the underline on hover */
+}
+
 .profile-img {
   max-width: 250px; /* Adjust size as needed */
   border-radius: 50%; /* Circle profile picture */
