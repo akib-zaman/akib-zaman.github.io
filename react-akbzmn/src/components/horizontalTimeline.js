@@ -6,8 +6,8 @@ import dellPic from '../images/dell.png';
 
 
 const events = [
-  { title: "Ph.D. in Computer Science", subTitle: "University of Texas at Arlington", date: "Expected Graduation: MAY 2024", description: "Human-Computer Interaction", icon: utaPic, backgroundColor: "#edced6" },
-  { title: "Graduate Research Assistant", subTitle: "University of Texas at Arlington", date: "Jan 2020 - May 2024", description: "The Hybrid Atelier", icon: thaPic, backgroundColor: "#aee6b0" },
+  { title: "Ph.D. in Computer Science", subTitle: "University of Texas at Arlington", date: "Graduated: MAY 2024", description: "Human-Computer Interaction", icon: utaPic, backgroundColor: "#edced6" },
+  { title: "PhD Research Scientist", subTitle: "University of Texas at Arlington", date: "Jan 2020 - May 2024", description: "The Hybrid Atelier", icon: thaPic, backgroundColor: "#aee6b0" },
   { title: "Graduate Intern", subTitle: "Dell Technologies Inc.", date: "May 2021 - Aug 2021", description: "Customer Experience Subdivision", icon: dellPic, backgroundColor: "#f0e4d7" },
   { title: "Graduate Intern", subTitle: "Dell Technologies Inc.", date: "Jun 2020 - Jul 2020", description: "Infrastructure Solutions Group", icon: dellPic, backgroundColor: "#f0e4d7" },
   { title: "Graduate Research Assistant", subTitle: "University of Texas at Arlington", date: "Jan 2018 - Jan 2020", description: "MIND Lab", icon: utaPic, backgroundColor: "#aee6b0" },
