@@ -22,7 +22,7 @@ const About = () => {
       </div>
       <a href={cvPDF} className="btn download-cv-btn" target="_blank" rel="noopener noreferrer">View CV</a>
       <div className="about-description">
-        <p>I am a recent PhD graduate specializing in Human-Computer Interaction and Exlainable AI at the University of Texas at Arlington.</p>
+        <p>I am a recent PhD graduate specializing in Human-Computer Interaction and Explainable AI at the University of Texas at Arlington.</p>
         <p>I'm particularly interested in roles that challenge me to apply my research in AI Explainability, enhancing the way humans interact with complex systems.</p>
         <p>I was supervised by <a href="http://cearto.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontWeight: 'bold' }}>Dr. César Torres</a>.</p>
       </div>
